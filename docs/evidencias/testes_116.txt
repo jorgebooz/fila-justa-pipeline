@@ -1,0 +1,136 @@
+test_centroide_quadrado (test_clima.GeometriaTests.test_centroide_quadrado) ... ok
+test_extrai_codigo_centroide_de_zip_sintetico (test_clima.GeometriaTests.test_extrai_codigo_centroide_de_zip_sintetico) ... ok
+test_rejeita_sistema_projetado (test_clima.GeometriaTests.test_rejeita_sistema_projetado) ... ok
+test_48_horas (test_clima.PrevisaoTests.test_48_horas) ... ok
+test_incompleto_falha (test_clima.PrevisaoTests.test_incompleto_falha) ... ok
+test_monta_url_de_48_horas (test_clima.PrevisaoTests.test_monta_url_de_48_horas) ... ok
+test_multi_local_ordem_e_mapeamento (test_clima.PrevisaoTests.test_multi_local_ordem_e_mapeamento) ... ok
+test_nulo_falha (test_clima.PrevisaoTests.test_nulo_falha) ... ok
+test_upsert_idempotente_mesmo_snapshot (test_clima.PrevisaoTests.test_upsert_idempotente_mesmo_snapshot) ... ok
+test_metricas_esperadas (test_clima_silver.TestClimaSilver.test_metricas_esperadas) ... ok
+test_metricas_incompletas (test_clima_silver.TestClimaSilver.test_metricas_incompletas) ... ok
+test_snapshot_com_offset (test_clima_silver.TestClimaSilver.test_snapshot_com_offset) ... ok
+test_snapshot_sem_fuso_rejeitado (test_clima_silver.TestClimaSilver.test_snapshot_sem_fuso_rejeitado) ... ok
+test_snapshot_utc (test_clima_silver.TestClimaSilver.test_snapshot_utc) ... ok
+test_sql_elt_no_warehouse (test_clima_silver.TestClimaSilver.test_sql_elt_no_warehouse) ... ok
+test_upsert_idempotente (test_clima_silver.TestClimaSilver.test_upsert_idempotente) ... ok
+test_view_por_snapshot_mais_recente (test_clima_silver.TestClimaSilver.test_view_por_snapshot_mais_recente) ... ok
+test_configuracao_invalida (test_clusters.TestClusters.test_configuracao_invalida) ... ok
+test_duplicatas_ate_sete_dias (test_clusters.TestClusters.test_duplicatas_ate_sete_dias) ... ok
+test_empate_resolvido_por_id (test_clusters.TestClusters.test_empate_resolvido_por_id) ... ok
+test_idempotencia_da_funcao (test_clusters.TestClusters.test_idempotencia_da_funcao) ... ok
+test_ids_duplicados_rejeitados (test_clusters.TestClusters.test_ids_duplicados_rejeitados) ... ok
+test_janela_da_configuracao (test_clusters.TestClusters.test_janela_da_configuracao) ... ok
+test_nao_agrupa_celulas_diferentes (test_clusters.TestClusters.test_nao_agrupa_celulas_diferentes) ... ok
+test_nao_agrupa_tipos_diferentes (test_clusters.TestClusters.test_nao_agrupa_tipos_diferentes) ... ok
+test_nao_encadeia_lacunas_consecutivas (test_clusters.TestClusters.test_nao_encadeia_lacunas_consecutivas) ... ok
+test_nova_ancora_depois_de_sete_dias (test_clusters.TestClusters.test_nova_ancora_depois_de_sete_dias) ... ok
+test_ordem_de_entrada_nao_muda_grupos (test_clusters.TestClusters.test_ordem_de_entrada_nao_muda_grupos) ... ok
+test_sem_fuso_rejeitado (test_clusters.TestClusters.test_sem_fuso_rejeitado) ... ok
+test_sql_idempotente_com_reconciliacao (test_clusters.TestClusters.test_sql_idempotente_com_reconciliacao) ... ok
+test_sql_tem_recursao_janela_ancora (test_clusters.TestClusters.test_sql_tem_recursao_janela_ancora) ... ok
+test_argumentos_e_identificador_da_rodada (test_dag_pipeline.TestDagPipeline.test_argumentos_e_identificador_da_rodada) ... ok
+test_bootstrap_banco_vazio (test_dag_pipeline.TestDagPipeline.test_bootstrap_banco_vazio) ... DDL conferido: 00_schemas.sql
+DDL conferido: 01_bronze.sql
+DDL conferido: 02_silver.sql
+DDL inicial aplicado: 03_gold.sql
+OK: schemas e modelo base prontos
+ok
+test_bootstrap_preserva_views_gold_existentes (test_dag_pipeline.TestDagPipeline.test_bootstrap_preserva_views_gold_existentes) ... DDL conferido: 00_schemas.sql
+DDL conferido: 01_bronze.sql
+DDL conferido: 02_silver.sql
+Gold existente preservado (views e scores mantidos)
+OK: schemas e modelo base prontos
+ok
+test_dependencias_obrigatorias (test_dag_pipeline.TestDagPipeline.test_dependencias_obrigatorias) ... ok
+test_marts_aceitam_rodada_correta (test_dag_pipeline.TestDagPipeline.test_marts_aceitam_rodada_correta) ... OK: marts publicados | run_id=fj2026_360815aa8c6fb51196f1c48e | clusters=11
+ok
+test_marts_rejeitam_rodada_errada (test_dag_pipeline.TestDagPipeline.test_marts_rejeitam_rodada_errada) ... ok
+test_run_id_estavel_e_distinto (test_dag_pipeline.TestDagPipeline.test_run_id_estavel_e_distinto) ... ok
+test_subprocesso_falha_encerra_tarefa (test_dag_pipeline.TestDagPipeline.test_subprocesso_falha_encerra_tarefa) ... Executando: transform / score.py
+ok
+test_total_tarefas_e_configuracao (test_dag_pipeline.TestDagPipeline.test_total_tarefas_e_configuracao) ... ok
+test_fator_tem_teto (test_equidade.TestEquidade.test_fator_tem_teto) ... ok
+test_intervalo_e_fuso (test_equidade.TestEquidade.test_intervalo_e_fuso) ... ok
+test_intervalo_invalido (test_equidade.TestEquidade.test_intervalo_invalido) ... ok
+test_invalido (test_equidade.TestEquidade.test_invalido) ... ok
+test_mais_reportes_nao_penaliza (test_equidade.TestEquidade.test_mais_reportes_nao_penaliza) ... ok
+test_mesma_observacao_e_expectativa (test_equidade.TestEquidade.test_mesma_observacao_e_expectativa) ... ok
+test_parametros_configurados (test_equidade.TestEquidade.test_parametros_configurados) ... ok
+test_sql_referencia_relato_antes_cluster (test_equidade.TestEquidade.test_sql_referencia_relato_antes_cluster) ... ok
+test_sql_upsert_idempotente (test_equidade.TestEquidade.test_sql_upsert_idempotente) ... ok
+test_suavizacao_k (test_equidade.TestEquidade.test_suavizacao_k) ... ok
+test_subrepresentacao_reforca (test_equidade.TestEquidade.test_subrepresentacao_reforca) ... ok
+test_yaml_invalido (test_equidade.TestEquidade.test_yaml_invalido) ... ok
+test_comparacao_respeita_rodada_da_equidade (test_publicacao_marts.TestPublicacaoMarts.test_comparacao_respeita_rodada_da_equidade) ... ok
+test_duas_views_publicadas (test_publicacao_marts.TestPublicacaoMarts.test_duas_views_publicadas) ... ok
+test_filtro_preserva_componentes_e_contrato (test_publicacao_marts.TestPublicacaoMarts.test_filtro_preserva_componentes_e_contrato) ... ok
+test_filtro_rodada_atual_em_ambas_as_views (test_publicacao_marts.TestPublicacaoMarts.test_filtro_rodada_atual_em_ambas_as_views) ... ok
+test_nao_desempata_por_snapshot_ou_hash (test_publicacao_marts.TestPublicacaoMarts.test_nao_desempata_por_snapshot_ou_hash) ... ok
+test_contagem_invalida_rejeitada (test_qualidade.TestQualidade.test_contagem_invalida_rejeitada) ... ok
+test_contagem_negativa_rejeitada (test_qualidade.TestQualidade.test_contagem_negativa_rejeitada) ... ok
+test_equidade_duplicada_rejeitada (test_qualidade.TestQualidade.test_equidade_duplicada_rejeitada) ... ok
+test_equidade_invalida_rejeitada (test_qualidade.TestQualidade.test_equidade_invalida_rejeitada) ... ok
+test_executar_sql_com_falha_interrompe (test_qualidade.TestQualidade.test_executar_sql_com_falha_interrompe) ... ok
+test_executar_sql_sem_falhas (test_qualidade.TestQualidade.test_executar_sql_sem_falhas) ... ok
+test_falha_na_coordenada (test_qualidade.TestQualidade.test_falha_na_coordenada) ... ok
+test_falha_no_score (test_qualidade.TestQualidade.test_falha_no_score) ... ok
+test_falta_regra_falha_fechado (test_qualidade.TestQualidade.test_falta_regra_falha_fechado) ... ok
+test_limite_e_run_id_parametrizados (test_qualidade.TestQualidade.test_limite_e_run_id_parametrizados) ... ok
+test_parametro_equidade (test_qualidade.TestQualidade.test_parametro_equidade) ... ok
+test_regra_duplicada_falha_fechado (test_qualidade.TestQualidade.test_regra_duplicada_falha_fechado) ... ok
+test_regra_extra_falha_fechado (test_qualidade.TestQualidade.test_regra_extra_falha_fechado) ... ok
+test_resultado_vazio_falha_fechado (test_qualidade.TestQualidade.test_resultado_vazio_falha_fechado) ... ok
+test_run_id_vazio_rejeitado (test_qualidade.TestQualidade.test_run_id_vazio_rejeitado) ... ok
+test_simulacao_usa_rollback_transacional (test_qualidade.TestQualidade.test_simulacao_usa_rollback_transacional) ... ok
+test_sql_contem_todas_as_regras (test_qualidade.TestQualidade.test_sql_contem_todas_as_regras) ... ok
+test_sql_sem_escritas (test_qualidade.TestQualidade.test_sql_sem_escritas) ... ok
+test_todas_as_regras_passam (test_qualidade.TestQualidade.test_todas_as_regras_passam) ... ok
+test_96_distritos_em_tres_faixas (test_relatos_app_sim.TesteRelatosAppSim.test_96_distritos_em_tres_faixas) ... ok
+test_data_sem_fuso_e_rejeitada (test_relatos_app_sim.TesteRelatosAppSim.test_data_sem_fuso_e_rejeitada) ... ok
+test_datas_2026_sem_futuro_em_relacao_a_base (test_relatos_app_sim.TesteRelatosAppSim.test_datas_2026_sem_futuro_em_relacao_a_base) ... ok
+test_determinismo_independente_da_ordem (test_relatos_app_sim.TesteRelatosAppSim.test_determinismo_independente_da_ordem) ... ok
+test_duplicatas_mesmo_tipo_ponto_e_janela (test_relatos_app_sim.TesteRelatosAppSim.test_duplicatas_mesmo_tipo_ponto_e_janela) ... ok
+test_ids_e_campos_sem_pii (test_relatos_app_sim.TesteRelatosAppSim.test_ids_e_campos_sem_pii) ... ok
+test_mapa_e_pontos_arquivos_de_entrada (test_relatos_app_sim.TesteRelatosAppSim.test_mapa_e_pontos_arquivos_de_entrada) ... ok
+test_upsert_atualiza_apenas_se_conteudo_mudar (test_relatos_app_sim.TesteRelatosAppSim.test_upsert_atualiza_apenas_se_conteudo_mudar) ... ok
+test_variacao_da_semente (test_relatos_app_sim.TesteRelatosAppSim.test_variacao_da_semente) ... ok
+test_componentes_somam_total (test_score.TestScore.test_componentes_somam_total) ... ok
+test_config_invalida (test_score.TestScore.test_config_invalida) ... ok
+test_dry_run_nao_precisa_alterar_tabela (test_score.TestScore.test_dry_run_nao_precisa_alterar_tabela) ... ok
+test_equidade_afeta_somente_exposicao (test_score.TestScore.test_equidade_afeta_somente_exposicao) ... ok
+test_historico_minimo_snapshot_adicionado (test_score.TestScore.test_historico_minimo_snapshot_adicionado) ... ok
+test_pesos_configurados (test_score.TestScore.test_pesos_configurados) ... ok
+test_rejeita_dados_invalidos (test_score.TestScore.test_rejeita_dados_invalidos) ... ok
+test_resultado_reproduzivel (test_score.TestScore.test_resultado_reproduzivel) ... ok
+test_saturacao (test_score.TestScore.test_saturacao) ... ok
+test_score_zero_chuva_fator_um (test_score.TestScore.test_score_zero_chuva_fator_um) ... ok
+test_seed_tipos_completo (test_score.TestScore.test_seed_tipos_completo) ... ok
+test_sql_conflict_nao_atualiza_igual (test_score.TestScore.test_sql_conflict_nao_atualiza_igual) ... ok
+test_sql_formula_e_ranks (test_score.TestScore.test_sql_formula_e_ranks) ... ok
+test_sql_usa_ancora_cronologica_e_desempate (test_score.TestScore.test_sql_usa_ancora_cronologica_e_desempate) ... ok
+test_views_isolam_rodada (test_score.TestScore.test_views_isolam_rodada) ... ok
+test_categorias_ativas_existentes (test_silver.TestSilver.test_categorias_ativas_existentes) ... ok
+test_configuracao_h3_lida_do_weights (test_silver.TestSilver.test_configuracao_h3_lida_do_weights) ... ok
+test_h3_resolucao_9 (test_silver.TestSilver.test_h3_resolucao_9) ... ok
+test_ids_de_fonte_ficam_distintos_no_sql (test_silver.TestSilver.test_ids_de_fonte_ficam_distintos_no_sql) ... ok
+test_mapa_tem_96_distritos (test_silver.TestSilver.test_mapa_tem_96_distritos) ... ok
+test_rejeita_coordenadas_invalidas (test_silver.TestSilver.test_rejeita_coordenadas_invalidas) ... ok
+test_rejeita_outro_h3 (test_silver.TestSilver.test_rejeita_outro_h3) ... ok
+test_upsert_nao_atualiza_mesmos_registros (test_silver.TestSilver.test_upsert_nao_atualiza_mesmos_registros) ... ok
+test_csv_exige_colunas (test_sp156.TestIngestaoSP156.test_csv_exige_colunas) ... ok
+test_csv_latin1_com_acentos (test_sp156.TestIngestaoSP156.test_csv_latin1_com_acentos) ... CSV SP156: codificação=latin-1; separador=','
+ok
+test_csv_usa_colunas_reais (test_sp156.TestIngestaoSP156.test_csv_usa_colunas_reais) ... CSV SP156: codificação=utf-8-sig; separador=','
+ok
+test_csv_utf8_com_acentos (test_sp156.TestIngestaoSP156.test_csv_utf8_com_acentos) ... CSV SP156: codificação=utf-8-sig; separador=','
+ok
+test_projecao_sem_dados_de_endereco (test_sp156.TestIngestaoSP156.test_projecao_sem_dados_de_endereco) ... ok
+test_recurso_duplicado_falha (test_sp156.TestIngestaoSP156.test_recurso_duplicado_falha) ... ok
+test_selecao_ano_e_ordem (test_sp156.TestIngestaoSP156.test_selecao_ano_e_ordem) ... ok
+test_sql_upsert_idempotente (test_sp156.TestIngestaoSP156.test_sql_upsert_idempotente) ... ok
+
+----------------------------------------------------------------------
+Ran 116 tests in 0.158s
+
+OK

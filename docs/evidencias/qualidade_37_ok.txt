@@ -1,0 +1,39 @@
+OK: 01_bronze_sp156_nao_vazia | falhas=0 | registros=1525907
+OK: 02_bronze_ibge_96 | falhas=0 | distritos=96
+OK: 03_bronze_clima_nao_vazia | falhas=0 | previsoes=13824
+OK: 04_bronze_app_nao_vazia | falhas=0 | relatos=889
+OK: 05_silver_ocorrencia_nao_vazia | falhas=0 | ocorrencias=16553
+OK: 06_silver_cluster_cobre_ocorrencias | falhas=0 | vinculos=16553, ocorrencias=16553
+OK: 07_silver_clima_nao_vazia | falhas=0 | previsoes=9216
+OK: 08_gold_dim_area_96 | falhas=0 | distritos=96
+OK: 09_gold_dim_tipo_nao_vazia | falhas=0 | tipos=5
+OK: 10_gold_dim_tempo_nao_vazia | falhas=0 | datas=143
+OK: 11_gold_fact_ocorrencia_vs_clusters | falhas=0 | fatos=11163, clusters_distintos=11163
+OK: 12_gold_equidade_96_por_rodada | falhas=0 | areas=96
+OK: 13_gold_score_vs_fact_ocorrencia | falhas=0 | scores=11163, clusters=11163
+OK: 14_mart_fila_vs_score | falhas=0 | fila=11163, scores=11163
+OK: 15_mart_equidade_vs_score | falhas=0 | comparacao=11163, scores=11163
+OK: 16_bronze_sp156_chaves_unicas | falhas=0 | registros=1525907
+OK: 17_bronze_app_chaves_unicas | falhas=0 | registros=889
+OK: 18_silver_ocorrencia_campos_validos | falhas=0 | fora_das_regras=0
+OK: 19_silver_cluster_chaves_unicas | falhas=0 | vinculos=16553
+OK: 20_silver_cluster_tipo_h3_consistente | falhas=0 | grupos_invalidos=0
+OK: 21_silver_clusters_cobertura_referencial | falhas=0 | sem_ocorrencia=0
+OK: 22_gold_dim_area_valores | falhas=0 | areas_invalidas=0
+OK: 23_gold_equidade_limites | falhas=0 | limite_M=2.0
+OK: 24_gold_equidade_soma_relatos | falhas=0 | comparacao_elegiveis_por_rodada
+OK: 25_gold_score_valores_e_formula | falhas=0 | scores_invalidos=0
+OK: 26_gold_score_explicacao | falhas=0 | sem_explicacao=0
+OK: 27_gold_rank_contiguo | falhas=0 | ranks=11163
+OK: 28_gold_mart_rodada_correta | falhas=0 | linhas_mart=11163
+OK: 29_gold_fila_componentes | falhas=0 | linhas_mart=11163
+OK: 30_gold_cluster_pertence_silver | falhas=0 | clusters_sem_silver=0
+OK: 31_gold_fact_soma_relatos | falhas=0 | soma_de_relatos_vs_vinculos
+OK: 32_gold_cluster_count_distinto | falhas=0 | clusters_distintos_vs_gold
+OK: 33_silver_snapshot_clima_atualizado | falhas=0 | bronze_e_silver_mesmo_snapshot
+OK: 34_silver_clima_96x48 | falhas=0 | linhas=4608, areas=96
+OK: 35_silver_clima_horas_por_area | falhas=0 | areas_com_horas_diferentes_de_48=0
+OK: 36_silver_clima_sem_valores_invalidos | falhas=0 | previsoes_invalidas=0
+OK: 37_gold_score_snapshot_corresponde_clima | falhas=0 | scores_com_snapshot_divergente=0
+QUALIDADE: regras=37 | falhas=0 | run_id=fj2026_433d14a4d3d60536f6aa88aa
+OK: 37 verificações de qualidade passaram; a DAG pode prosseguir

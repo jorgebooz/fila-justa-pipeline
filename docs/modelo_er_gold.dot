@@ -1,0 +1,16 @@
+digraph er {
+ graph [rankdir=LR, bgcolor="white", pad=.25, nodesep=.36, ranksep=.65, splines=polyline];
+ node [shape=record, fontname="DejaVu Sans", fontsize=10, style="filled",color="#b8c9dc",fillcolor="#f6f9fd", margin="0.08,0.06"];
+ edge [color="#577595",arrowsize=.6,penwidth=1.6];
+ area [label="{gold.dim_area|PK area_id\lnome / populacao\ldomicilios / necessidade\l}"];
+ tipo [label="{gold.dim_tipo|PK tipo_padrao\lrisco_vida / sens_clima\l}"];
+ tempo [label="{gold.dim_tempo|PK data\lano / mes / trimestre\l}"];
+ ocorr [label="{gold.fact_ocorrencia|PK cluster_id\lFK area_id / tipo_padrao\ln_relatos / aberta_em\lrun_id (atual)\l}", fillcolor="#e9f3ff"];
+ equid [label="{gold.fact_equidade_area|PK run_id + area_id\lobservado / esperado\lrazao / fator_equidade\l}",fillcolor="#f4ecfe"];
+ score [label="{gold.fact_score|PK run_id + cluster_id\l4 componentes / ranks\lscore_sem / score_com\l}",fillcolor="#f4ecfe"];
+ mart [label="{gold.mart_fila_priorizacao|VIEW / contrato do MVP\l1 linha por cluster publicado\l}",fillcolor="#e7f7ee"];
+ comp [label="{gold.mart_comparacao_equidade|VIEW / antes e depois\l}",fillcolor="#e7f7ee"];
+ area -> ocorr; tipo -> ocorr; area -> equid; ocorr -> score; equid -> score [style=dashed];
+ score -> mart; ocorr -> mart; score -> comp; equid -> comp;
+ tempo -> ocorr [style=dotted,label="sem FK",fontsize=9,color="#93a4b9"];
+}

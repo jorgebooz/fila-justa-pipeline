@@ -1,0 +1,34 @@
+           tabela           | registros 
+----------------------------+-----------
+ bronze.raw_sp156           |   1525907
+ bronze.raw_ibge_area       |        96
+ bronze.raw_clima           |     13824
+ bronze.raw_relatos_app     |       889
+ silver.ocorrencia_limpa    |     16553
+ silver.cluster_ocorrencia  |     16553
+ silver.clima_previsao      |      9216
+ gold.dim_area              |        96
+ gold.fact_ocorrencia       |     11163
+ gold.fact_score            |     55815
+ gold.mart_fila_priorizacao |     11163
+(11 rows)
+
+             run_id              | clusters 
+---------------------------------+----------
+ fj2026_433d14a4d3d60536f6aa88aa |    11163
+(1 row)
+
+ rank |  area_nome   |    tipo    | n_relatos | score_0_100 | fator_equidade | chuva_48h_mm 
+------+--------------+------------+-----------+-------------+----------------+--------------
+    1 | Santo Amaro  | buraco     |        22 |    50.33077 |       1.000000 |        6.500
+    2 | Jaçanã       | buraco     |        45 |    50.24615 |       1.000000 |        6.000
+    3 | Jaçanã       | buraco     |        39 |    50.24615 |       1.000000 |        6.000
+    4 | Jaçanã       | buraco     |        31 |    50.24615 |       1.000000 |        6.000
+    5 | Itaquera     | buraco     |        21 |    49.87385 |       1.000000 |        3.800
+    6 | Tucuruvi     | buraco     |        26 |    49.82308 |       1.000000 |        3.500
+    7 | Lajeado      | buraco     |        16 |    47.81725 |       1.138601 |        3.800
+    8 | Cidade Lider | buraco     |        18 |    47.63385 |       1.000000 |        4.200
+    9 | Campo Limpo  | buraco     |        14 |    45.48343 |       1.153641 |        4.100
+   10 | Tatuapé      | alagamento |         6 |    45.18089 |       1.066870 |        4.500
+(10 rows)
+

@@ -1,0 +1,18 @@
+# credenciais e configuração local
+.env
+
+# dados brutos e saídas locais (LGPD / tamanho)
+data/
+*.csv.gz
+*.zip
+logs/*
+!logs/.gitkeep
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# airflow local
+config/airflow.cfg

@@ -1,0 +1,2 @@
+FALHA ESPERADA: regra de score detectou alteração temporária em cl_00073c88214153fc8a22e4c5
+OK: transação revertida integralmente (ROLLBACK); banco preservado

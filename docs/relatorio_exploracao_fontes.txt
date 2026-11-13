@@ -1,0 +1,289 @@
+AVISO: verificação SSL desligada (dado público, sem credenciais).
+== SP156: Dados do SP156 - Solicitações | dataset modificado em: 2026-10-19T16:40:54.928206
+Licença declarada: Creative Commons CCZero (cc-zero)
+Recursos encontrados: 136
+CSVs trimestrais de solicitações encontrados: 46
+Escolhido: Dados do SP156 - 3° TRI 2026 | tamanho: 105625875
+
+== Lendo: https://dados.prefeitura.sp.gov.br/dataset/0aecfa2b-aa3a-40d4-8183-0d4351b7fd0a/resource/f67fcc12-8da4-485f-92a3-d2af40cc771e/download/arquivo-final-3-trim-26.csv
+Encoding: utf-8-sig | delimitador: ','
+Colunas reais (15): ['Data de Abertura', 'Data de Finalização', 'Meio de Comunicação', 'Tema', 'Assunto', 'Serviço', 'Status', 'Órgão', 'Logradouro', 'Número', 'CEP', 'Latitude', 'Longitude', 'Prefeitura Operacional', 'Distrito']
+Mapeamento -> serviço: Serviço | lat: Latitude | lon: Longitude | abertura: Data de Abertura | finalização: Data de Finalização | distrito: Distrito | prefeitura operacional: Prefeitura Operacional | status: Status | meio: Meio de Comunicação | tema: Tema
+AVISO: seed <CAMINHO_LOCAL>\fila-justa-data\include\seeds\servicos_interesse.csv não encontrada; cobertura por serviço de interesse não será calculada.
+
+Modo: arquivo inteiro | linhas lidas: 484,232
+Com latitude e longitude: 303,748 (62.7%)
+Com Distrito preenchido: 302,923 (62.6%)
+Com Data de Finalização preenchida: 393,857 (81.3%)
+Data de abertura — primeira linha: 07/01/2026 | última linha: 09/30/2026
+Formato da data: linhas que só cabem em DD/MM/AAAA (1º número > 12): 0 | só em MM/DD/AAAA (2º número > 12): 301,817
+Serviços distintos: 684 | distritos distintos: 191 | prefeituras operacionais: 37
+
+Status:
+    396501  Finalizada
+     79926  Aberto
+      6473  Em Andamento
+      1331  Cancelada
+         1  Em Aprovação
+
+Meio de Comunicação:
+    229854  PORTAL
+    155135  CRM
+     65314  MOBILE
+     17728  CHATBOT
+     16107  INTEGRACAO
+        94  RESOLUCAO
+
+Tema (top 15):
+     89728  Trânsito e Transporte
+     78443  Rua e bairro
+     57776  Lixo e limpeza
+     54094  Cidadania e assistência social
+     34739  Finanças
+     30388  Animais
+     24219  Ouvidoria SUS
+     22889  Meio Ambiente
+     18984  Ouvidoria Geral do Município
+     16096  Urgência
+     13416  Saúde
+     12667  Cultura, esporte e lazer
+      7941  Bilhete Único
+      7884  Educação
+      3986  Obras e imóveis
+
+Prefeitura Operacional (todas):
+    181641  
+     32568  SE
+     21270  MOOCA
+     15443  BUTANTA
+     12855  ITAQUERA
+     11869  PINHEIROS
+     11604  CAPELA DO SOCORRO
+     11569  CAMPO LIMPO
+     11567  LAPA
+     11281  SANTANA-TUCURUVI
+     11265  PENHA
+     10780  IPIRANGA
+     10398  VILA MARIANA
+     10079  SANTO AMARO
+      9750  PIRITUBA-JARAGUA
+      9300  M BOI MIRIM
+      8864  SAO MATEUS
+      8348  CASA VERDE-LIMAO-CACHOEIRINHA
+      7512  FREGUESIA-BRASILANDIA
+      7337  SAO MIGUEL
+      7183  CIDADE ADEMAR
+      6960  VILA MARIA-VILA GUILHERME
+      6783  ARICANDUVA-FORMOSA-CARRAO
+      6758  JABAQUARA
+      6720  JACANA-TREMEMBE
+      6261  ITAIM PAULISTA
+      5618  VILA PRUDENTE
+      4764  GUAIANASES
+      4520  ERMELINO MATARAZZO
+      4119  SAPOPEMBA
+      3061  CIDADE TIRADENTES
+      2498  PARELHEIROS
+      2327  PERUS-ANHANGUERA
+      1176  Superintendencia das Usinas de Asfalto
+       174  Prefeitura Regional nao encontrada
+         7  Departamento de Estradas de Rodagem
+         3  Secretaria Municipal do Verde e do Meio Ambiente
+
+Distrito (todos):
+    181309  
+     10594  SE
+      9222  SANTANA
+      6943  JABAQUARA
+      5762  GRAJAU
+      5702  REPUBLICA
+      5437  ITAQUERA
+      5248  SANTO AMARO
+      5081  JARDIM SAO LUIS
+      5071  CAPAO REDONDO
+      4726  MOOCA
+      4649  SACOMA
+      4525  CIDADE ADEMAR
+      4457  VILA MARIANA
+      4424  TREMEMBE
+      4409  BRASILANDIA
+      4384  PINHEIROS
+      4379  PENHA
+      4372  CAMPO LIMPO
+      4331  SANTA CECILIA
+      4304  JARDIM ANGELA
+      4273  CIDADE DUTRA
+      4175  SAPOPEMBA
+      4122  BUTANTA
+      4094  PIRITUBA
+      3964  LAPA
+      3863  SAUDE
+      3827  RIO PEQUENO
+      3785  ITAIM BIBI
+      3740  JARAGUA
+      3739  BELEM
+      3727  IPIRANGA
+      3594  SAO MATEUS
+      3510  CACHOEIRINHA
+      3490  TATUAPE
+      3389  CIDADE LIDER
+      3388  LIBERDADE
+      3182  VILA PRUDENTE
+      3173  TUCURUVI
+      3116  ITAIM PAULISTA
+      3056  FREGUESIA DO O
+      3055  VILA SONIA
+      3044  CIDADE TIRADENTES
+      3024  VILA CURUCA
+      2995  LAJEADO
+      2858  BRAS
+      2757  VILA MARIA
+      2708  VILA MEDEIROS
+      2703  CURSINO
+      2688  RAPOSO TAVARES
+      2653  IGUATEMI
+      2639  CANGAIBA
+      2626  MANDAQUI
+      2624  SAO MIGUEL
+      2607  CAMPO GRANDE
+      2607  PERDIZES
+      2512  VILA JACUI
+      2510  VILA MATILDE
+      2499  ARICANDUVA
+      2457  VILA FORMOSA
+      2427  JOSE BONIFACIO
+      2425  PEDREIRA
+      2413  CAMPO BELO
+      2395  PARELHEIROS
+      2391  JARDIM PAULISTA
+      2381  JACANA
+      2380  BOM RETIRO
+      2354  SAO LUCAS
+      2351  LIMAO
+      2336  CASA VERDE
+      2290  JARDIM HELENA
+      2228  BELA VISTA
+      2199  CONSOLACAO
+      2193  SAO RAFAEL
+      2130  ERMELINO MATARAZZO
+      2128  PONTE RASA
+      2125  CARRAO
+      2106  VILA ANDRADE
+      1986  AGUA RASA
+      1944  MOEMA
+      1935  ARTUR ALVIM
+      1829  GUAIANASES
+      1738  SAO DOMINGOS
+      1699  VILA LEOPOLDINA
+      1683  PARQUE DO CARMO
+      1677  MORUMBI
+      1639  BARRA FUNDA
+      1558  CAMBUCI
+      1530  SOCORRO
+      1509  ALTO DE PINHEIROS
+      1499  VILA GUILHERME
+      1243  PARI
+      1226  PERUS
+      1067  ANHANGUERA
+      1043  JAGUARE
+       593  JAGUARA
+       149  MARSILAC
+        49  80
+        42  35
+        38  71
+        33  45
+        29  90
+        29  38
+        26  69
+        26  66
+        25  49
+        25  34
+        24  86
+        23  53
+        23  32
+        23  62
+        22  30
+        21  91
+        21  16
+        20  23
+        20  70
+        20  7
+        20  77
+        19  59
+        19  76
+        18  29
+        18  19
+        18  9
+        18  63
+        17  1
+        17  17
+        17  82
+        17  85
+        17  60
+        16  12
+        16  67
+        16  11
+        15  94
+        15  51
+        15  93
+        15  37
+        15  65
+        14  43
+        14  27
+        13  46
+        13  15
+        13  73
+        13  48
+        12  20
+        12  95
+        12  83
+        12  22
+        12  88
+        12  42
+        11  6
+        11  92
+        11  36
+        11  89
+        11  26
+        11  68
+        10  4
+        10  13
+        10  24
+        10  10
+        10  57
+         9  74
+         9  78
+         9  21
+         9  18
+         9  96
+         8  14
+         8  54
+         8  25
+         8  5
+         8  64
+         8  8
+         7  47
+         7  55
+         6  28
+         6  79
+         6  41
+         6  72
+         6  39
+         5  87
+         5  84
+         5  50
+         5  81
+         4  44
+         4  58
+         4  31
+         4  33
+         3  56
+         3  2
+         3  75
+         2  61
+         2  40
+
+== Open-Meteo: teste de chamada com 2 pontos
+HTTP 200 | pontos retornados: 2
+  lat=-23.514938 lon=-46.610504 | horas: 48 | unidade: mm | primeiras 6 horas: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  lat=-23.585238 lon=-46.659637 | horas: 48 | unidade: mm | primeiras 6 horas: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]

@@ -1,0 +1,14 @@
+# Override opcional para usar H3 em todos os serviços Airflow, sem alterar o Compose original.
+# Ativar com: docker compose -f docker-compose.yaml -f docker-compose.h3.yaml up -d --build
+x-airflow-h3: &airflow_h3
+  image: fila-justa-airflow:3.4.0-h3
+  build:
+    context: .
+    dockerfile: Dockerfile.h3
+services:
+  airflow-init: *airflow_h3
+  airflow-apiserver: *airflow_h3
+  airflow-scheduler: *airflow_h3
+  airflow-worker: *airflow_h3
+  airflow-dag-processor: *airflow_h3
+  airflow-triggerer: *airflow_h3

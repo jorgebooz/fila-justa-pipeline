@@ -1,0 +1,11 @@
+servico,categoria,incluir
+Entulho e grandes objetos em via pública - solicitar remoção,entulho,sim
+Tapa-buraco,buraco,sim
+Tapa-buraco em faixa exclusiva ou corredor de ônibus,buraco,sim
+"Solicitar limpeza de bueiros, boca de lobo e poços de visita",bueiro_entupido,sim
+Drenagem de água da chuva - Bueiros e bocas de lobo,bueiro_entupido,sim
+Queda de árvore,arvore_caida,sim
+Alagamento,alagamento,sim
+Inundação,alagamento,sim
+Denunciar descarte irregular de entulho e outros resíduos em área pública,entulho,sim
+Descarte de entulho em flagrante,entulho,sim

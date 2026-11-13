@@ -1,0 +1,22 @@
+digraph architecture {
+ graph [rankdir=LR, bgcolor="white", pad=0.30, nodesep=0.35, ranksep=0.75, splines=ortho, fontname="DejaVu Sans", label="", outputorder=edgesfirst];
+ node [shape=box, style="rounded,filled", fontname="DejaVu Sans", fontsize=12, margin="0.15,0.13", color="#d8e2ed", penwidth=1.2];
+ edge [color="#7690aa", arrowsize=.65, penwidth=1.8];
+ subgraph cluster_sources { label="FONTES / CAPTURA"; color="#eef2f8"; style="rounded,filled"; fillcolor="#f7f9fc"; fontname="DejaVu Sans"; fontsize=12;
+  sp [label="SP156\nSolicitacoes 2026", fillcolor="#eef5ff", color="#bdd7fa"];
+  ibge [label="IBGE\nCenso 2022", fillcolor="#eef5ff", color="#bdd7fa"];
+  meteo [label="Open-Meteo\nChuva / 48h", fillcolor="#eef5ff", color="#bdd7fa"];
+  app [label="App simulado\nSeed 2026", fillcolor="#eef5ff", color="#bdd7fa"];
+ }
+ bronze [label="BRONZE\nraw_sp156 / raw_ibge_area\nraw_clima / raw_relatos_app", fillcolor="#ffe8d1", color="#f2bd7a"];
+ silver [label="SILVER\nocorrencia_limpa / clusters\nclima_previsao / descartes", fillcolor="#e6efff", color="#9bc0f3"];
+ gold [label="GOLD\ndimensoes + fatos\nequidade / score", fillcolor="#f1e7fb", color="#bda6e5"];
+ marts [label="MARTS PUBLICADOS\nfila_priorizacao\ncomparacao_equidade", fillcolor="#ddf5e9", color="#88d3a6"];
+ mvp [label="CONTRATO DO MVP\nConsulta SQL / gestor", fillcolor="#e5f6ee", color="#9edaba"];
+ sp -> bronze; ibge -> bronze; meteo -> bronze; app -> bronze;
+ bronze -> silver -> gold -> marts -> mvp;
+ airflow [label="AIRFLOW 3.4\n13 tarefas / agendamento diario\n37 regras de qualidade",fillcolor="#1d3454",fontcolor="white",color="#1d3454",fontsize=12];
+ airflow -> bronze [style=dashed,color="#5e7798",constraint=false];
+ airflow -> silver [style=dashed,color="#5e7798",constraint=false];
+ airflow -> gold [style=dashed,color="#5e7798",constraint=false];
+}

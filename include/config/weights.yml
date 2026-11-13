@@ -1,0 +1,14 @@
+# Hipóteses iniciais conforme o guia da disciplina; ainda não calibradas.
+w_risco: 40
+w_expo: 30
+w_tempo: 10
+w_clima: 20
+saturacao_relatos: 20
+saturacao_dias: 30
+saturacao_chuva_mm: 50
+equidade_k: 10
+equidade_alpha: 0.5
+equidade_max: 2.0
+h3_resolucao: 9
+cluster_janela_dias: 7
+municipio_cod: '3550308'

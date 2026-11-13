@@ -1,0 +1,4 @@
+# Base do Compose existente; adiciona somente a dependência H3 prevista no README.
+FROM apache/airflow:3.4.0
+USER airflow
+RUN pip install --no-cache-dir "h3==4.5.0"
