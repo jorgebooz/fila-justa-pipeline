@@ -3,6 +3,16 @@
 **Big Data Architecture & Data Integration - Global Solution 2026.2**  
 São Paulo, Brasil | Airflow 3.4.0 + PostgreSQL 16 + Python + H3 | ELT
 
+## Integrantes
+
+| Integrante | Registro (RM) |
+|---|---|
+| Caio Freitas | RM553190 |
+| Caio Hideki | RM553630 |
+| Jorge Booz | RM552700 |
+| Mateus Tibão | RM553267 |
+| Lana Andrade | RM552596 |
+
 ## O que este repositório entrega
 
 Pipeline orquestrado de ocorrências urbanas do **SP156**, enriquecidas com população por distrito do **Censo IBGE 2022**, previsão de precipitação **Open-Meteo** e relatos de aplicativo **simulados com semente fixa**. O produto é `gold.mart_fila_priorizacao`: fila explicável com risco, exposição, tempo, clima e fator de equidade, além de `gold.mart_comparacao_equidade` para comparar antes/depois.
